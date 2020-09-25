@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="testSuite">
+  <test name="Tests">
+    <classes>
+      <class name="checkrestart.RunRestartTests"/>
+    </classes>
+  </test>
+</suite>
