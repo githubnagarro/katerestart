@@ -70,7 +70,7 @@ public class RunRestartTests {
 		
 		//driver.findElements(By.xpath("//table[@class='pane stripped']//tr[@class='build-row multi-line overflow-checked']//a")).get(0).click();
 		
-		driver.findElement(By.xpath("//a[text()='#11023']")).click();
+		driver.findElement(By.xpath("//a[text()='#11026']")).click();
 		System.out.println("Build Number CLicked");
 		Thread.sleep(5000);
 		WebElement check2=driver.findElement(By.xpath("//a[@class='task-link' and @title='Environment Variables']"));
