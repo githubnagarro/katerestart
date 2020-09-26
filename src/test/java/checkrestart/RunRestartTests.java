@@ -12,6 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import org.openqa.selenium.interactions.Actions;
 
 public class RunRestartTests {
 	
@@ -71,7 +72,12 @@ public class RunRestartTests {
 		//driver.findElements(By.xpath("//table[@class='pane stripped']//tr[@class='build-row multi-line overflow-checked']//a")).get(0).click();
 		driver.navigate().refresh();
 	    Thread.sleep(15000);
-		driver.findElement(By.xpath("//a[text()='#11030']")).click();
+	    
+		WebElement eleBuild=driver.findElement(By.xpath("//a[text()='#11030']"));
+		Actions actions = new Actions(driver);
+		actions.moveToElement(eleBuild);
+		actions.perform();
+		eleBuild.click();
 		System.out.println("Build Number CLicked");
 		Thread.sleep(5000);
 		WebElement check2=driver.findElement(By.xpath("//a[@class='task-link' and @title='Environment Variables']"));
