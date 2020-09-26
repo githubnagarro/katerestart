@@ -20,7 +20,7 @@ public class RunRestartTests {
 	public void setUp() throws InterruptedException {
 		// TODO Auto-generated method stub
 		
-		System.setProperty("webdriver.gecko.driver", "./geckodriver-v0.27.0-win64/geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver", "/usr/local/geckodriver");
 		FirefoxOptions options = new FirefoxOptions();
 		options.setHeadless(true);
 		 driver= new FirefoxDriver(options);
