@@ -54,7 +54,7 @@ public class RunRestartTests {
 		//robo.keyPress(KeyEvent.VK_ENTER);
 		//robo.keyRelease(KeyEvent.VK_ENTER);
 	    ele.sendKeys("[Enter]");
-	    ele.sendKeys("[Enter]")
+	    ele.sendKeys("[Enter]");
 		
 		System.out.println("Enter Pressed");
 		
