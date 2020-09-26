@@ -69,7 +69,8 @@ public class RunRestartTests {
 		
 		
 		//driver.findElements(By.xpath("//table[@class='pane stripped']//tr[@class='build-row multi-line overflow-checked']//a")).get(0).click();
-		
+		driver.navigate().refresh();
+	    Thread.sleep(5000)
 		driver.findElement(By.xpath("//a[text()='#11026']")).click();
 		System.out.println("Build Number CLicked");
 		Thread.sleep(5000);
