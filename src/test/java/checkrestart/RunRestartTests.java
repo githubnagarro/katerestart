@@ -47,11 +47,14 @@ public class RunRestartTests {
 		driver.findElement(By.name("Submit")).click();
 		System.out.println("Submit btn clicked");
 		Thread.sleep(4000);
-		driver.findElement(By.id("search-box")).sendKeys("ActiveThreads");
+		WebElement ele=driver.findElement(By.id("search-box"));
+	        ele.sendKeys("ActiveThreads");
 		System.out.println("Search box key entered");
-		Robot robo = new Robot();
-		robo.keyPress(KeyEvent.VK_ENTER);
-		robo.keyRelease(KeyEvent.VK_ENTER);
+		//Robot robo = new Robot();
+		//robo.keyPress(KeyEvent.VK_ENTER);
+		//robo.keyRelease(KeyEvent.VK_ENTER);
+	    ele.sendKeys("[Enter]");
+	    ele.sendKeys("[Enter]")
 		
 		System.out.println("Enter Pressed");
 		
